@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: #212121; color: #fff;">
+    <ul  class="language">
+        <li> Javascript</li>
+    </ul>
+</body>
+<script>
+    function addLanguage(langName){
+        const li = document.createElement('li');
+        li.innerHTML = `${langName}`
+        document.querySelector('.language').appendChild(li)
+    }
+    addLanguage("python")
+    addLanguage("Java")
+
+    function addOptimisation(lang){
+        const li = document.createElement('li');
+        // let addText = document.createTextNode(`${lang}`)
+        // li.appendChild(addText)
+        li.appendChild(document.createTextNode(lang))
+        document.querySelector('.language').appendChild(li)
+    }
+    addOptimisation('golang')
+
+
+    // Edit 
+
+    const secondLang = document.querySelector("li:nth-child(2)");
+    console.log(secondLang)
+    secondLang.innerHTML = "MySQL";
+    const newli = document.createElement('li');
+    newli.textContent = "MySql";
+    secondLang.replaceWith(newli);
+
+
+
+    // Edit
+    const firstLang = document.querySelector("li:first-child");
+    firstLang.outerHTML = "<li>Typescript</li>";
+
+
+    // Edit
+    const lastLang = document.querySelector("li:last-child");
+    lastLang.remove()
+
+
+
+</script>
+</html>
