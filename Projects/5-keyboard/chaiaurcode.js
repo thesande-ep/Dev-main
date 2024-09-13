@@ -1,1 +1,20 @@
-console.log('Project 5');
+const insert = document.querySelector('#insert')
+
+window.addEventListener('keydown', (evt)=>[
+    insert.innerHTML = `
+        <div class="color">
+            <table>
+                <tr>
+                  <th>Key</th>
+                  <th>Keycode</th>
+                  <th>Code</th>
+                </tr>
+                <tr>
+                  <td>${evt.key === ' ' ?'space':evt.key}</td>
+                  <td>${evt.keyCode}</td>
+                  <td>${evt.code}</td>
+                </tr>
+            </table>
+        </div>
+    `
+])
