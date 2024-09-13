@@ -16,12 +16,14 @@
     }
     // setInterval(sayDate, 2000, "Hi")
 
-    const intervalId = (sayDate, 2000, "Hi")
+    // const intervalId = setInterval(sayDate, 2000, "Hi")
     // setInterval(intervalId);
 
+    // const intervalId = ()=>(sayDate, 2000, "Hi");
 
+    let intervalId 
     document.querySelector('#start').addEventListener('click', ()=>{
-        setInterval(intervalId);
+        intervalId = setInterval(sayDate, 2000, "Hi");
         console.log("STARTED");
     });
     
