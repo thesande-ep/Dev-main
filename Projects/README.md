@@ -326,7 +326,7 @@ function endGame(){
 
 
 ## Project 5
-```javascrript
+```javascript
 
 const insert = document.querySelector('#insert')
 
