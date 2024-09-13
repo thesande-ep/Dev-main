@@ -1,6 +1,6 @@
 const insert = document.querySelector('#insert')
 
-window.addEventListener('keydown', (evt)=>[
+window.addEventListener('keydown', (evt)=>{
     insert.innerHTML = `
         <div class="color">
             <table>
@@ -17,4 +17,4 @@ window.addEventListener('keydown', (evt)=>[
             </table>
         </div>
     `
-])
+})
