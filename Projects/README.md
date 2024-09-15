@@ -353,6 +353,9 @@ window.addEventListener('keydown', (evt)=>{
 
 ## Project 6
 
+
+
+
 ```javascript
 
 // Generate a random color
@@ -408,3 +411,8 @@ document.querySelector('#stop').addEventListener('click', stopChangingColor);
 // })
 
 ```
+
+
+
+
+## hello
