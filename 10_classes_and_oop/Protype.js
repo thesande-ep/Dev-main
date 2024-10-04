@@ -67,6 +67,6 @@ String.prototype.trueLength = function(){
     console.log(`True length is ${this.trim().length}`);
 }
 
-anotherUsername.trueLength()
-"Sandeep    ".trueLength()
-"Coffee".trueLength()
+anotherUsername.trueLength();
+"Sandeep    ".trueLength();
+"Coffee".trueLength();
